@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display Text on Click</title>
+</head>
+<body>
+
+<!-- The button calls the JavaScript function "displayText" when clicked -->
+<button onclick="displayText()">
+  Click Me to Display Text
+</button>
+
+<!-- An empty paragraph element where the text will appear -->
+<p id="text-container"></p>
+
+<script>
+  function displayText() {
+    // Get the element with the ID "text-container"
+    var container = document.getElementById("text-container");
+    
+    // Change the inner HTML of the container to the desired text
+    container.innerHTML = "The text has appeared within the webpage!";
+  }
+</script>
+
+</body>
+</html>
